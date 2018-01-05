@@ -1,7 +1,8 @@
 ---
 - name: nginx
   hosts: all
-  remote_user: root
+  remote_user: ec2-user
+  become: yes
 
   roles:
     - common
