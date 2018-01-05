@@ -1,8 +1,7 @@
 ---
 - name: nginx
   hosts: all
-  remote_user: ec2-user
-  sudo: yes
+  remote_user: root
 
   roles:
     - common
