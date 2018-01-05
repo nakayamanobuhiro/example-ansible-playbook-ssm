@@ -1,11 +1,6 @@
 ---
 - name: install the latest version of nginx
-  yum:
-    name: nginx
-    state: latest
+  yum: name=nginx state=present
 
 - name: nginx service state
-  service:
-    name: nginx
-    state: started
-    enabled: yes
+  service: name=nginx state=started enabled=yes
